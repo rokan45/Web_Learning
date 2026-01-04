@@ -30,3 +30,20 @@ h2{
     background-size: contain;
     background-repeat: no-repeat;
 }
+nav li{
+    list-style: none;
+    display: inline;
+    margin-right: 20px;
+}
+
+nav li:hover{
+    background-color: antiquewhite;
+}
+
+nav li a{
+    text-decoration: none;
+}
+
+footer{
+    text-align: center;
+}
