@@ -47,3 +47,33 @@ nav li a{
 footer{
     text-align: center;
 }
+
+.container{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    background-color: antiquewhite;
+    padding: 25px;
+    font-size: 10px;
+    text-align: center;
+    gap: 10px;
+}
+
+body{
+    max-width: 1270px;
+    margin: 0 auto;
+    background-color: beige;
+}
+.container img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+
+}
+.container button{
+    background-color: aquamarine;
+    padding: 10px;
+    font-size: 1.5em;
+    border-radius: 10px;
+    cursor: pointer;
+}
