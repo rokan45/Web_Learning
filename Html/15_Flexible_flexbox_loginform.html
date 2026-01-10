@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form using flexible Felxbox</title>
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-between;
+            background-color: rgba(133, 140, 138, 0.05);
+        }
+        
+        .bar{
+            height: 60px;
+            align-items: center;
+        }
+        nav .info-bar{
+            display: flex;
+            gap: 30px;
+        }
+        nav a{
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+            /* background-color: antiquewhite; */
+            border-radius: 5px;
+        }
+       
+
+        .login-form-container{
+            /* border: 1px solid red; */
+            background-color: rgb(231, 229, 227);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-form-container form{
+            /* border: 1px solid red; */
+            background-color: darkgray;
+            box-shadow: 10px 10px 10px gray;
+            border-radius: 10px;
+            height: 50%;
+            width: 50%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        form input{
+            margin-top: 20px;
+            height: 30px;
+            max-width: fit-content;
+            font-weight: bold;
+            border-width: 3px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="bar">
+            <div class="info-bar">
+            <a href="">Home</a>
+            <a href="">Profile</a>
+            <a href="">Blog</a>
+            <a href="">About</a>
+            </div>
+            <div>
+                 <a href="">Login</a>
+            </div>
+           
+        </nav>
+    </header>
+
+    <section class="container">
+        <div class="login-form-container">
+            <form action="">
+                <h2>Please Login</h2>
+                <input type="email" name="" id="" placeholder="Your email here" required>
+                <input type="password" name="" id="" placeholder="Enter Your Password Here" required>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </section>
+</body>
+</html>
