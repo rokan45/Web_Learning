@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition In Css</title>
+    <style>
+        .box{
+            width:300px;
+            height:300px;
+            border: 1px solid red;
+            background-color: antiquewhite;
+
+             /* property name | duration | easing function | delay */
+            /* transition: width 5s linear 2s; */
+            transition: transform 3s ease-in 2s ;
+        }
+        .box:hover{
+           width: 600px;
+           background-color: aqua;
+           transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Transform: It's used to change the shape. This is css style property name.</li>
+        <li>Translate: It is a value of transform style rule. this means  if move either x or y axis or both axis</li>
+        <li>Transition: How long it take to change the shape or color</li>
+    </ul>
+
+    <div class="containe">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+
+                           <!-- All we have to know about css transition -->
+ 
+<!-- /* Apply to 1 property */
+
+/* property name | duration */
+transition: margin-right 4s;
+
+/* property name | duration | delay */
+transition: margin-right 4s 1s;
+
+/* property name | duration | easing function */
+transition: margin-right 4s ease-in-out;
+
+/* property name | duration | easing function | delay */
+transition: margin-right 4s ease-in-out 1s;
+
+/* property name | duration | behavior */
+transition: display 4s allow-discrete;
+
+/* Apply to 2 properties */
+transition:
+  margin-right 4s,
+  color 1s;
+
+/* Apply to all changed properties */
+transition: all 0.5s ease-out allow-discrete;
+transition: 200ms linear 50ms;
+
+/* Global values */
+transition: inherit;
+transition: initial;
+transition: revert;
+transition: revert-layer;
+transition: unset; -->
+
+</body>
+</html>
