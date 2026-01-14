@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow Concept</title>
+    <style>
+        .container{
+            /* border: 1px solid red; */
+            width: 300px;
+            height: 300px;
+            margin-left: 100px;
+        }
+
+        /* Today Learnig CSS Element is Overflow and Ellipsis */
+        /* Know more about form google */
+        
+        .box{
+            border: 1px solid red;
+            width: 300px;
+            height: 300px;
+            /* overflow: hidden; */
+            /* overflow: scroll; */
+            /* overflow-x: hidden; */
+            /* overflow-y: hidden; */
+            overflow: auto;
+        }
+        .ellipsis{
+            width: 200px;
+            /* text-overflow: ellipsis; */
+            /* text-overflow: clip; */
+        }
+    </style>
+</head>
+<body>
+
+    <p class="ellipsis">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quos, natus a tenetur numquam quidem quo saepe ab eos magnam architecto quia, explicabo, maiores alias quasi ut atque deserunt consequuntur molestias vel dolores illum! Itaque sed, nostrum laboriosam eum praesentium laudantium porro possimus veniam ut.</p>
+    <div class="container">
+        <div class="box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nostrum quam doloremque, culpa voluptatibus quisquam ut est ea corrupti neque omnis libero voluptatem reiciendis totam unde quia eum doloribus commodi cupiditate repellendus. In neque numquam maiores atque consectetur ad, velit architecto ipsam consequuntur dolores molestias recusandae earum vero. Accusamus, similique Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium illum aliquid iste hic explicabo distinctio mollitia amet debitis minima? Asperiores nemo veniam quod quis nisi expedita recusandae? Ratione nostrum error voluptatum impedit officia. Numquam magnam odio vero? Iure, cupiditate alias..</p>
+        </div>
+        <div class="box">
+            <p>At nesciunt hic quod natus tenetur officiis fugit nemo, quas, aperiam dolorum consequatur repellat excepturi quidem. Labore enim esse veritatis alias possimus in tempora odio rerum, ducimus harum. Reiciendis cumque porro totam. In, tenetur quos laborum quasi iure ea doloribus ipsa tempora numquam iusto veritatis ex vel deserunt aspernatur sunt Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur minus, explicabo quibusdam odio corporis magnam. Delectus amet nesciunt voluptatum, assumenda nam, velit laudantium maiores numquam fugiat veniam aliquid voluptas minus quas quae doloribus earum harum illum expedita sint ad ullam dolorem recusandae odit ab! Molestias ex beatae expedita necessitatibus eos?</p>
+        </div>
+        <div class="box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem aspernatur sed eius, aperiam hic a dignissimos ex tenetur quae dolore temporibus libero iure reprehenderit maxime possimus quod voluptatibus assumenda id qui repudiandae magni iste vitae. Enim eligendi repellat a beatae!</p>
+        </div>
+    </div>
+</body>
+</html>
