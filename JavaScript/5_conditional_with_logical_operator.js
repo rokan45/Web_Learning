@@ -8,7 +8,7 @@ var Debt=rent>salary;
 if(Payable|| Debt){
     console.log("You can pay with your money")
 }
-if (rent<2000  && Payable) {
+else if (rent<2000  && Payable) {
     console.log("You are capable of paying debt")
 } else {
     console.log("You have work hard to more income")
