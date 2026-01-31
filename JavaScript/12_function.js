@@ -12,8 +12,9 @@ display();
 function sqauare(x, y) {
     return x * y;
 }
-//function calling
-console.log(sqauare(4, 5));
+
+console.log(sqauare(4, 5)); //function calling
+
 
 //function parameter with different variable
 function AgeGap(x,y){
@@ -24,4 +25,20 @@ function AgeGap(x,y){
 let myAge= 30;
 let myWifeAge=25;
 
-AgeGap(myAge,myWifeAge);
+AgeGap(myAge,myWifeAge); ////function calling
+
+//function with string parameter
+
+function strLength(str){
+    const size=str.length;
+    console.log("The string length is: ", size);
+
+    if(size%2==0){
+        console.log("size is even")
+    }
+    else{
+        console.log("String length is odd.")
+    }
+}
+
+strLength("I love Bangladesh");
