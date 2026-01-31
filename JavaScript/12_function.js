@@ -27,8 +27,9 @@ let myWifeAge=25;
 
 AgeGap(myAge,myWifeAge); ////function calling
 
-//function with string parameter
 
+
+//function with string parameter
 function strLength(str){
     const size=str.length;
     console.log("The string length is: ", size);
@@ -42,3 +43,19 @@ function strLength(str){
 }
 
 strLength("I love Bangladesh");
+
+
+//Sum of number from array using function
+function SumOf(numbers){
+    let sum=0;
+    for(const number of numbers){
+        console.log(number)
+        sum+=number;
+    }
+    return sum
+}
+
+const num=[12,25,11,16,10];
+
+console.log("The numbers are: ")
+console.log("The sum of those number is:",SumOf(num));
