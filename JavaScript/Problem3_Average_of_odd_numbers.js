@@ -9,7 +9,15 @@ function oddAverage(numbers) {
 
         }
     }
+    
     console.log(odds);
+    
+    let sum=0;
+    for(const number of odds){
+        sum+=number;
+    }
+
+    return sum;
 
 }
 
