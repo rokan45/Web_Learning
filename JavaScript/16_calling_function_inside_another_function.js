@@ -4,7 +4,7 @@ function add(num1,num2){
 function sub(num1,num2){
     return num1-num2;
 }
-function mal(num1,num2){
+function mul(num1,num2){
     return num1*num2;
 }
 function div(num1,num2){
@@ -27,6 +27,10 @@ function calculator(a,operation,b){
     else if(operation==='/'){
         const result=div(a,b);
         return result;
+    }else{
+        console.log("Enter a valid operation. Only (+,-,*,/) applicable here.")
     }
 }
 
+const finalResult=calculator(3,'#',7);
+console.log(finalResult);
