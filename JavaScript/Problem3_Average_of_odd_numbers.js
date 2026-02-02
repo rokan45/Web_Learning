@@ -1,23 +1,26 @@
 //Average of the odd numbers
 function oddAverage(numbers) {
-     const odds = [];
+    const odds = [];
     for (const number of numbers) {
-       
+
         if (number % 2 !== 0) {
             //console.log(number);
             odds.push(number);
 
         }
     }
-    
+
     console.log(odds);
-    
-    let sum=0;
-    for(const number of odds){
-        sum+=number;
+
+    let sum = 0;
+    for (const number of odds) {
+        sum += number;
     }
 
-    return sum;
+    const count=odds.length;
+    const result = sum /count;
+
+    return result.toPrecision(4);
 
 }
 
