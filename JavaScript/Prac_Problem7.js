@@ -20,7 +20,7 @@ const car = {
     year: 2020
 };
 
-car['passenger capcity']=5;
+car['passenger capcity'] = 5;
 
 console.log(car);
 
@@ -46,6 +46,19 @@ let student2 = {
     isStudent: true
 };
 
-const counter=Object.keys(student2);
+const counter = Object.keys(student2).length;
 console.log(counter);
 
+//loop through an object and print the key-value pairs with their types
+
+let myObject = {
+    name: 'John Doe',
+    age: 25,
+    city: 'Example City',
+    isStudent: true
+}
+
+for(const prop in myObject){
+   
+    console.log("key: "+prop," | "+"type: "+typeof(myObject[prop]));
+}
