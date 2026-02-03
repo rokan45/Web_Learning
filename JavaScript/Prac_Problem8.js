@@ -21,3 +21,13 @@ for(const num of randomNUM){
         console.log(num);
     }
 }
+
+//Use a for...of loop to concatenate all the elements of an array into a single string.
+
+var numbers = ['Tom', 'Tim', 'Tin', 'Tik'];
+
+let conca=[];
+for(const num of numbers){
+    conca+=num;
+}
+console.log(conca)
