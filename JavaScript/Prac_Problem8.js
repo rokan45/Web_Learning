@@ -31,10 +31,3 @@ for(const num of numbers){
     conca+=num;
 }
 console.log(conca)
-
-//Reverse the words of a sentence. Only the position of the word will be reversed. check out the output
-
-const statement = 'I am a hard working person';
-
-randomNUM.reverse();
-console.log(randomNUM);
