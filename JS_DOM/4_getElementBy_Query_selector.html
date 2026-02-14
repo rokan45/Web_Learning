@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Into to DOM</title>
+</head>
+<body>
+
+    <!-- DOM refers to Document Object Model -->
+     <section>
+        <div>
+            <h1 id="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, iste!
+            </h1>
+        </div>
+        <div id="engineering" class="subject">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat incidunt officiis <span>Hello</span> numquam dolorum optio fuga excepturi unde spm <span>Hey Moinalisa</span> blanditiis porro magnam!</p>
+            <li class="ready">CSE</li> 
+            <li class="ready">EEE</li> 
+            <li class="ready">WCE</li> 
+            <li class="ready">WWE</li> 
+        </div>
+
+        <script>
+            //To access a specific element on the lis of all tag by using query selector all
+            const allEle=document.querySelectorAll('#engineering p span');
+           for(const li of allEle){
+            console.log(li.innerText);
+           }
+
+
+        </script>
+        
+     </section>
+</body>
+</html>
