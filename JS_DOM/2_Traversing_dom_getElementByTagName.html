@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Into to DOM</title>
+</head>
+<body>
+
+    <!-- DOM refers to Document Object Model -->
+     <section>
+        <div>
+            <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, iste!
+            </h1>
+        </div>
+        <div>
+            <li>CSE</li> 
+            <li>EEE</li> 
+            <li>WCE</li> 
+            <li>WWE</li> 
+        </div>
+
+        <script>
+            console.log("This is the first learning of dom!");
+
+            const student ={
+                name:'Rokanuzzaman',
+                id:2202023,
+                dept:'cse',
+                study:function(subject){
+                    console.log("Studying subject",subject)
+                }
+            }
+
+        //  Access the tag elemet using getElementByTagName
+
+        //By this you can just see the all of list tag in element
+        const allTag=document.getElementsByTagName('li');
+         console.log(allTag);
+
+        // to access all list element
+        for(const list of allTag){
+            console.log(list.innerText);
+        }
+        </script>
+        
+     </section>
+</body>
+</html>
