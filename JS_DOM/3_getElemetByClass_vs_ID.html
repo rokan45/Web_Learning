@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Into to DOM</title>
+</head>
+<body>
+
+    <!-- DOM refers to Document Object Model -->
+     <section>
+        <div>
+            <h1 id="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, iste!
+            </h1>
+        </div>
+        <div>
+            <li class="ready">CSE</li> 
+            <li class="ready">EEE</li> 
+            <li class="ready">WCE</li> 
+            <li class="ready">WWE</li> 
+        </div>
+
+        <script>
+
+        //  Access the tag elemet using getElementByID
+        const getThat= document.getElementById('text');
+        console.log(getThat);
+        getThat.innerText= 'I love eating';
+
+        //  Access the tag elemet using getElementsByClassName
+        const getClass= document.getElementsByClassName('ready');
+        console.log(getClass);
+
+
+
+        //By this you can just see the all of list tag in element
+        const allTag=document.getElementsByClassName('ready');
+         console.log(allTag);
+
+        // to access all list element
+        for(const list of allTag){
+            console.log(list.innerText);
+        }
+        </script>
+        
+     </section>
+</body>
+</html>
