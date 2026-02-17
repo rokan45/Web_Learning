@@ -6,22 +6,38 @@
     <title>DOM  Events</title>
 </head>
 <body>
-    //There are so many event exist. But we are going to start by "onclick" event
+    <!--There are so many  way to use event. But we are going to start by "onclick" event -->
 
-    //One way to use event
+    <!-- Option1: One way to use event -->
     <h2>On click Event</h2>
     <button onclick="console.log('I just clicked')">Click Me</button>
 
-    //another way to use event
-    <button onclick="makeGreen">Make Green</button>
+    <!-- Option 2: using script tag -->
+    <button onclick="makeGreen()">Make Green</button>
 
-    //create function to make body green
+    <!-- create function to make body green -->
     <script>
         function makeGreen(){
             document.body.style.backgroundColor='green';
         }
     </script>
 
+    <!--Option 3: Use event by get elementId  -->
+    <button id="make-blue">Make Blue</button>
+
+    <script>
+        const makeBlue=document.getElementById('make-blue');
+        makeBlue.onclick=function makeblue(){
+            document.body.style.backgroundColor='blue';
+        }
+    </script>
+
+    <!-- Option 4:Direct function call -->
+    <button id="btn-black">Make black</button>
+
     
+    <!-- Option 4:we can use event from external js file rather than script tag --> 
+     <button onclick="makeRed()">Make Red</button>
+    <script src="event.js"></script>
 </body>
 </html>
