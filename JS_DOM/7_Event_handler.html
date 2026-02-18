@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handler</title>
+</head>
+<body>
+    <h2 id="title">HStu is proper palce to learn CSE</h2>
+    <button id="btn-text">Check Reality</button>
+
+    <h1 id="name">Your name</h1>
+    <input id="input-value" placeholder="your name" type="text">
+    <button id="btn-name">Submit</button>
+
+    <script>
+        //set event 
+        document.getElementById('btn-name').addEventListener('click',function(){
+            const inputName=document.getElementById('input-value');
+
+            const newName=inputName.value;
+
+            //set new name
+            const nameP=document.getElementById('name');
+            nameP.innerText=newName;
+            
+        })
+    </script>
+
+    <script src="handler.js"></script>
+</body>
+</html>

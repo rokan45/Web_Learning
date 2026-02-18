@@ -12,7 +12,7 @@
     <h2>On click Event</h2>
     <button onclick="console.log('I just clicked')">Click Me</button>
 
-    <!-- Option 2: using script tag -->
+    <!-- Option 2: on direct on click -->
     <button onclick="makeGreen()">Make Green</button>
 
     <!-- create function to make body green -->
@@ -32,10 +32,21 @@
         }
     </script>
 
-    <!-- Option 4:Direct function call -->
+    <!-- Option 3(different version):Direct function call -->
     <button id="btn-black">Make black</button>
 
-    
+    <!-- Best practice to event handle|| using addEventListener -->
+     <button id="btn-yellow">Make Yellow</button>
+     <script>
+        function makeYellow(){
+            document.body.style.backgroundColor='yellow';
+        }
+        // common syntax--document.getElementId().addEventListener('event type',handler)
+        document.getElementById('btn-yellow').addEventListener('click',makeYellow);
+
+     </script>
+
+
     <!-- Option 4:we can use event from external js file rather than script tag --> 
      <button onclick="makeRed()">Make Red</button>
     <script src="event.js"></script>
