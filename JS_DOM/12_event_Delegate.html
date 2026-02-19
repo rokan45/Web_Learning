@@ -1,0 +1,43 @@
+
+<!-- ## Event Delegation
+
+Event delegation is a technique where you attach a single event listener to a **parent element** instead of multiple child elements.
+
+It works because of **event bubbling**.
+
+### Example
+
+```js
+document.getElementById("list").addEventListener("click", function(e) {
+  if (e.target.tagName === "LI") {
+    console.log("Item clicked:", e.target.textContent);
+  }
+});
+Instead of adding a click listener to every `<li>`, you add one to the parent.
+
+## What is Event Bubbling
+When an event occurs on an element, it first runs on the target, then propagates upward through its ancestors.
+Flow:
+`child → parent → body → document`
+
+
+## Benefits of Event Bubbling (Why Delegation Works)
+
+Less memory usage
+You don’t attach many listeners.
+
+Better performance
+Fewer listeners = faster execution.
+
+Handles dynamic elements
+Newly added child elements automatically work without adding new listeners.
+
+Cleaner code
+Centralized event handling.
+
+---
+
+Core idea:
+
+Event delegation relies on bubbling to capture child events at the parent level.
+ -->

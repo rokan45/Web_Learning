@@ -40,33 +40,35 @@
       </div>
 
       <!-- <form action=""> -->
-        <textarea name="" id="comment-box" cols="90" rows="5"></textarea>
-        <br />
-        <button id="btn-post">Publish Comment</button>
+      <textarea name="" id="comment-box" cols="90" rows="5"></textarea>
+      <br />
+      <button id="btn-post">Publish Comment</button>
       <!-- </form> -->
     </section>
 
     <script>
-             //Step1: set a event handler on button
-        document.getElementById('btn-post').addEventListener('click',function(){
-            //Step2: get the text written in comment text area
-            const getText=document.getElementById('comment-box');
-            const newComment=getText.value;
+      //Step1: set a event handler on button
+      document
+        .getElementById("btn-post")
+        .addEventListener("click", function () {
+          //Step2: get the text written in comment text area
+          const getText = document.getElementById("comment-box");
+          const newComment = getText.value;
 
-            //Step3: get the parent node and set text in comment box area
-            const commentContainer=document.getElementById('comment-container');
+          //Step3: get the parent node and set text in comment box area
+          const commentContainer = document.getElementById("comment-container");
 
-            //Step4: create (child node) comment paragraph and set the inner text
-            const commentElement=document.createElement('p');
-            commentElement.classList.add('comment')
-            commentElement.innerText=newComment;
+          //Step4: create (child node) comment paragraph and set the inner text
+          const commentElement = document.createElement("p");
+          commentElement.classList.add("comment");
+          commentElement.innerText = newComment;
 
-            //Step5: append the new p tag to the parent node
-            commentContainer.appendChild(commentElement);
+          //Step5: append the new p tag to the parent node
+          commentContainer.appendChild(commentElement);
 
-            //to comment clear comment box
-            getText.value='';
-        })
+          //to comment clear comment box
+          getText.value = "";
+        });
     </script>
   </body>
 </html>
