@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bubble and Propagating</title>
+  </head>
+  <body>
+    <div id="parent">
+      <button id="child">Click Me</button>
+    </div>
+
+    <script>
+      document.getElementById("parent").addEventListener("click", () => {
+        alert("Parent clicked!");
+      });
+
+      document.getElementById("child").addEventListener("click", (event) => {
+        alert("Child clicked!");
+        // event.stopPropagation(); // Uncomment to prevent bubbling
+      });
+    </script>
+
+    <!-- Theoritical Knowledge -->
+     <!--  Event Propagation
+Event propagation is the mechanism that defines how events travel through the DOM tree. It has three phases:
+#Capturing Phase
+- The event starts at the root (document) and travels downward through ancestor elements until it reaches the target element.
+- If you set {capture: true} in addEventListener, the handler runs during this phase.
+#Target Phase
+- The event reaches the actual element that triggered it (the target).
+- Event listeners on the target element run here.
+#Bubbling Phase
+- After reaching the target, the event travels upward through ancestor elements back to the root.
+- This is the default phase where most event listeners execute unless capturing is explicitly set.
+
+🔹 Event Bubbling
+Event bubbling is the default behavior of event propagation in JavaScript:
+- When an event occurs on a child element, it first runs the handler on that element.
+- Then, the event "bubbles up" to its parent, grandparent, and so on, until it reaches the root (document).
+- Example: Clicking a <button> inside a <div> will trigger both the button’s and the div’s click handlers (unless stopped).
+
+🔹 Controlling Propagation
+- event.stopPropagation() → Stops the event from continuing to bubble or capture further.
+- event.stopImmediatePropagation() → Stops bubbling and prevents other listeners on the same element from firing.
+- event.preventDefault() → Prevents the default browser action (e.g., stopping a form submission), but does not stop propagation.
+ -->
+  </body>
+</html>
