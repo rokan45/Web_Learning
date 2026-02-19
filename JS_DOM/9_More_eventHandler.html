@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Event Handler</title>
+</head>
+<body>
+    <button id="btn-mouse">Click Here</button>
+    <input id="input-name" type="text" placeholder="your name">
+    <script>
+        //mouse enter event
+         document.getElementById('btn-mouse').addEventListener('mouseenter',function(){
+            document.body.style.backgroundColor='pink';
+        })
+
+        //mouse move event
+        document.getElementById('btn-mouse').addEventListener('mousemove',function(){
+            document.body.style.backgroundColor='pink';
+        })
+
+        //mouse out event
+        document.getElementById('btn-mouse').addEventListener('mouseout',function(){
+            document.body.style.backgroundColor='pink';
+        })
+
+        //focus event
+        document.getElementById('input-name').addEventListener('focus',function(){
+            document.body.style.backgroundColor='pink';
+        })
+
+        //Blur event
+        document.getElementById('input-name').addEventListener('blur',function(){
+            document.body.style.backgroundColor='pink';
+        })
+
+        //keydown event
+        document.getElementById('input-name').addEventListener('keydown',function(event){
+            console.log('typing',event.target.value);
+        })
+
+        //keyup event
+        document.getElementById('input-name').addEventListener('keyup',function(event){
+            console.log('typing',event.target.value);
+        })
+
+
+         
+
+    </script>
+
+
+</body>
+</html>
