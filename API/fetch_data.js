@@ -26,11 +26,16 @@ const displayPost = (posts) => {
     posts.forEach(post => {
 
         //2.create element and get post title
-        const li = document.createElement("li");
-        li.innerText = post.title;
+        const postCard = document.createElement("div");
+        postCard.innerHTML=`<div class="post-card">
+            <h1>${post.title}</h1>
+            <p>${post.body}</p>
+        </div>`
 
         //3.append with parent element
-        postConatiner.appendChild(li);
+        postConatiner.appendChild(postCard);
 
     });
 }
+
+loadPost();

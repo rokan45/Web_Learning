@@ -5,6 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore JSON</title>
+
+    <style>
+        #headLine{
+            text-align: center;
+        }
+        #post-container {
+            max-width: 1160px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            row-gap: 25px;
+            column-gap: 30px;
+        }
+
+        .post-card {
+            border: 1px solid purple;
+            height: 300px;
+            padding: 10px;
+            box-shadow: 1px 1px 1px 1px gray;
+            border-radius: 5px;
+        }
+        .post-card p{
+            text-align: justify;
+        }
+    </style>
 </head>
 
 <body>
@@ -17,8 +42,11 @@
 
 
     <!-- Add a container to show the post -->
-    <ul id="post-container"></ul>
-    
+    <h1 id="headLine">All Post</h1>
+    <div id="post-container">
+        
+    </div>
+
     <script src="json.js"></script>
     <script src="fetch_data.js"></script>
 </body>
