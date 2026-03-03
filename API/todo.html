@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #todo-container {
+            max-width: 1160px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 25px;
+            column-gap: 30px;
+        }
+
+        .todo-card {
+            width: 100%;
+            margin: 0px;
+            padding-left: 10px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 10px;
+            border: 1px solid purple;
+            height: 50px;
+            box-shadow: 1px 1px 1px 1px gray;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>All Todo List</h1>
+
+    <section id="todo-container">
+
+    </section>
+
+
+    <script src="todo.js"></script>
+</body>
+
+</html>
