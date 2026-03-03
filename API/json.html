@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore JSON</title>
 </head>
+
 <body>
     <h2 style="font-weight: bold;">Explore JSON</h2>
     <p>In this silte consloe by the sript using a javascript file to explore object to json file.</p>
 
     <button onclick="load()">Load Data</button>
 
+    <button onclick="loadPost()">Load Post</button>
+
+
+    <!-- Add a container to show the post -->
+    <ul id="post-container"></ul>
+    
     <script src="json.js"></script>
     <script src="fetch_data.js"></script>
 </body>
+
 </html>
