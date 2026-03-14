@@ -182,3 +182,13 @@
     border-right-color: var(--border);
   }
 }
+.DevP{
+  margin-bottom: 10px;
+}
+
+.student{
+  padding: 10px;
+  margin: 0 auto;
+  border: 1px solid bisque;
+  border-radius: 10px;
+}

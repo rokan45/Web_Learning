@@ -18,8 +18,13 @@ function App() {
         </div>
         <div>
           <h1>Get started</h1>
-          <DisplayName></DisplayName>
-
+        </div>
+      </section>
+      <section className='DevP'>
+        <div>
+           <DisplayName name='Rokan' tech='React' ></DisplayName>
+           <DisplayName name='Alif' tech='Node' ></DisplayName>
+           <DisplayName name='Tonmoy' tech='Next.js' ></DisplayName>
         </div>
       </section>
     </>
@@ -27,11 +32,17 @@ function App() {
 }
 
 //component create
-function DisplayName(){
+function DisplayName(prep){
+
+  console.log(prep);
+
+  const headStyle={
+    font:'bold',
+  }
   return(
-    <div>
-      <h2>Developer Name:</h2>
-      <p>Dev Tech</p>
+    <div className='student'>
+      <h2 style={headStyle}>Developer Name : {prep.name}</h2>
+      <p style={headStyle}>Dev Tech : {prep.tech}</p>
     </div>
   )
 }
