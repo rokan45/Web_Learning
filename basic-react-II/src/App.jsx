@@ -1,7 +1,13 @@
-import { useState } from 'react'
+import { Suspense, useState } from 'react'
 import './App.css'
 import Counter from './counter'
 import ScoreCount from './scoreCard'
+import User from './user'
+
+const fetchUser=async()=>{
+    const user=await fetch('https://jsonplaceholder.typicode.com/users');
+    return user.json();
+  }
 
 function App() {
   function HandleClick() {
@@ -11,12 +17,18 @@ function App() {
     alert(Number + 5)
   }
 
+  const userData=fetchUser();
+
   return (
     <>
-      <section className='basic'> 
+      <section className='basic'>
         {/* style can be applied dynamically */}
         <h1 style={{ textAlign: 'center' }}>React Core Concept</h1>
       </section>
+      
+      <Suspense fallback={<h3>Loading...</h3>}>
+         <User userData={userData}></User>
+      </Suspense>
 
       <section className='basic'>
         <Counter></Counter>

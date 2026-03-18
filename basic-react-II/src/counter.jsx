@@ -13,6 +13,7 @@ export default function Counter() {
     const counterStyle = {
         border: '2px solid green',
         padding: '10px',
+        borderRadius:'5px',
     }
     return (
         <div style={counterStyle}>

@@ -21,9 +21,9 @@ export default function ScoreCount() {
 
     return (
         <div>
-            <h1>Total Runs:{run} </h1>
+            <h2>Total Runs:{run} </h2>
             {
-                <h2>Total six : {six}</h2>
+                <h4>Total six : {six}</h4>
             }
             <button onClick={handleSingle}>Single</button>
             <button onClick={handleFour}>Four</button>
