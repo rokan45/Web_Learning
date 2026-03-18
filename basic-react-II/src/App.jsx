@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import Counter from './counter'
 
 function App() {
   function HandleClick() {
@@ -11,7 +12,16 @@ function App() {
 
   return (
     <>
-      <section> <h1>React Core Concept</h1></section>
+      <section className='basic'> 
+        {/* style can be applied dynamically */}
+        <h1 style={{ textAlign: 'center' }}>React Core Concept</h1>
+      </section>
+
+      <section>
+        <Counter></Counter>
+      </section>
+
+
       <section>
         {/* //One way to handle click event */}
         <button onClick={HandleClick}>Click Here</button>
@@ -25,7 +35,7 @@ function App() {
         }}>On click</button>
 
         {/* //4th way direct on arrow function */}
-        <button onClick={()=>alert("Using asrrow")}>Using arrow</button>
+        <button onClick={() => alert("Using asrrow")}>Using arrow</button>
       </section>
 
     </>
