@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Counter from './counter'
+import ScoreCount from './scoreCard'
 
 function App() {
   function HandleClick() {
@@ -17,12 +18,15 @@ function App() {
         <h1 style={{ textAlign: 'center' }}>React Core Concept</h1>
       </section>
 
-      <section>
+      <section className='basic'>
         <Counter></Counter>
       </section>
 
+      <section className='basic'>
+        <ScoreCount></ScoreCount>
+      </section>
 
-      <section>
+      <section className='basic'>
         {/* //One way to handle click event */}
         <button onClick={HandleClick}>Click Here</button>
 
