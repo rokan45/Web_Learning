@@ -1,12 +1,12 @@
 
 
-export default function Albums() {
-    
-    console.log(albums);
+export default function Albums({album}) {
+    console.log(album);
 
     return (
-        albums.map(album => (
-            <Album album={album} key={album.id} />
-        ))
+        <div className="basic">
+            <h2>UserID: {album.userId} </h2>
+            <h3>Title: {album.title} </h3>
+        </div>
     )
 }
