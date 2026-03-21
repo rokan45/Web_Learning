@@ -3,11 +3,21 @@ import './App.css'
 import Counter from './counter'
 import ScoreCount from './scoreCard'
 import User from './user'
+import Album from './album';
 
-const fetchUser=async()=>{
-    const user=await fetch('https://jsonplaceholder.typicode.com/users');
-    return user.json();
-  }
+// fetching user data form api
+// const fetchUser=async()=>{
+//     const user=await fetch('https://jsonplaceholder.typicode.com/users');
+//     return user.json();
+//   }
+
+
+const FetchAlbumData = async () => {
+    const res = await fetch('https://jsonplaceholder.typicode.com/albums');
+    return res.json();
+}
+
+
 
 function App() {
   function HandleClick() {
@@ -17,7 +27,10 @@ function App() {
     alert(Number + 5)
   }
 
-  const userData=fetchUser();
+  //call data fetch function
+  // const userData=fetchUser();
+  const albumdata=FetchAlbumData();
+  console.log(albumdata);
 
   return (
     <>
@@ -25,18 +38,28 @@ function App() {
         {/* style can be applied dynamically */}
         <h1 style={{ textAlign: 'center' }}>React Core Concept</h1>
       </section>
-      
-      <Suspense fallback={<h3>Loading...</h3>}>
-         <User userData={userData}></User>
+
+      <Suspense fallback={<h2>Data Loading...</h2>}>
+       <Album albumdata={albumdata} ></Album>
       </Suspense>
 
+      {/* To display user api data */}
+
+      {/* <Suspense fallback={<h3>Loading...</h3>}>
+         <User userData={userData}></User>
+      </Suspense> */}
+
+
+      {/* 
       <section className='basic'>
         <Counter></Counter>
-      </section>
+      </section> */}
 
+
+      {/* 
       <section className='basic'>
         <ScoreCount></ScoreCount>
-      </section>
+      </section> */}
 
       <section className='basic'>
         {/* //One way to handle click event */}
