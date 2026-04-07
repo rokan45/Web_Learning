@@ -24,19 +24,21 @@ const Navbar = () => {
                             <li><a>Item 3</a></li>
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">daisyUI</a>
+                    <a className="btn btn-ghost text-xl">TimePass</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 gap-8">
                         {/* <li><a href='/'>Home</a></li> */}
                         <NavLink to="/">Home</NavLink>
                         <NavLink to="/blog">Blog</NavLink>
+                        <NavLink to="/users">User</NavLink>
                         <NavLink to="/about">About</NavLink>
                         <NavLink to="/contact">Contact</NavLink>
+
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn">Button</a>
+                    <a className="btn">Logout</a>
                 </div>
             </div>
         </div>
