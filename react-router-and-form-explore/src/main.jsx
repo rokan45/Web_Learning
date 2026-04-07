@@ -7,28 +7,34 @@ import Home from './component/home/Home.jsx'
 import Root from './component/Root/Root.jsx'
 import Blog from './component/Blog/Blog.jsx'
 import Navbar from './component/Navbar/Navbar.jsx'
+import About from './component/About/About.jsx'
+import Contact from './component/Contact/Contact.jsx'
 
 const router = createBrowserRouter([
   {
     path: "/",
-    Component:Root,
-    children:[
-      {index:true, Component:Navbar},
+    element: <Root />,
+    children: [
+      { index: true, element: <Home /> },
       {
-        path:"blog",
-        Component:Blog
+        path: "home",
+        element: <Home />
+      },
+      {
+        path: "blog",
+        element: <Blog />
+      },
+      {
+        path: "about",
+        element: <About/>
+      },
+      {
+        path: "contact",
+        element:<Contact/>
       }
     ]
-  }, 
-  {
-    path: "about",
-    element: <div>Nothing about me!</div>
-  },
-  {
-    path:"app",
-    Component:App
   }
-])
+]);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
