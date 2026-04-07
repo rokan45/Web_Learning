@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router';
 
 const Navbar = () => {
+    const [showText, setShowText] = useState(false)
     return (
         <div>
             <div className="navbar bg-base-100 shadow-sm">
@@ -32,13 +33,14 @@ const Navbar = () => {
                         <NavLink to="/">Home</NavLink>
                         <NavLink to="/blog">Blog</NavLink>
                         <NavLink to="/users">User</NavLink>
+                        <NavLink to="/post">Post</NavLink>
                         <NavLink to="/about">About</NavLink>
                         <NavLink to="/contact">Contact</NavLink>
 
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn">Logout</a>
+                    <a className="btn"><button onClick={() => setShowText(!showText)}>{showText ? 'Login' : 'Logout'}</button></a>
                 </div>
             </div>
         </div>
