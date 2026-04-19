@@ -1,8 +1,6 @@
 
 
-const PostPage = async () => {
-
-    // 1.
+ // 1.
     // const postData = await fetch('https://jsonplaceholder.typicode.com/posts');
     // const data=await postData.json();
     // console.log(data)
@@ -14,10 +12,15 @@ const PostPage = async () => {
         return res.json();
     }
 
+const PostPage = async () => {
+
+    const data= await getPost();
+    console.log(data)
+
 
     return (
         <div>
-            <h1>Hey Im here {data.length}!</h1>
+            <h1>Hey Im here!{data.length}</h1>
         </div>
     );
 };

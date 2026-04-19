@@ -1,112 +1,106 @@
-[
-  {
-    "id": 101,
-    "name": "Lumixia Wireless Headphones",
-    "brand": "Lumixia",
-    "category": "Electronics",
-    "price": 149.99,
-    "currency": "USD",
-    "stock": 45,
-    "rating": 4.8,
-    "features": ["Noise Cancelling", "40h Battery", "Bluetooth 5.2"]
-  },
-  {
-    "id": 102,
-    "name": "Vortex Ergonomic Mouse",
-    "brand": "TechGlide",
-    "category": "Accessories",
-    "price": 59.50,
-    "currency": "USD",
-    "stock": 120,
-    "rating": 4.5,
-    "features": ["Programmable Buttons", "RGB Lighting", "16000 DPI"]
-  },
-  {
-    "id": 103,
-    "name": "Peak Performance Yoga Mat",
-    "brand": "Zenith",
-    "category": "Fitness",
-    "price": 35.00,
-    "currency": "USD",
-    "stock": 200,
-    "rating": 4.9,
-    "features": ["Non-slip", "Eco-friendly Material", "Extra Thick"]
-  },
-  {
-    "id": 104,
-    "name": "Aura Smart Light Bulb",
-    "brand": "Lumina",
-    "category": "Smart Home",
-    "price": 19.99,
-    "currency": "USD",
-    "stock": 315,
-    "rating": 4.2,
-    "features": ["App Control", "16M Colors", "Voice Assistant Ready"]
-  },
-  {
-    "id": 105,
-    "name": "Titan Steel Water Bottle",
-    "brand": "Hydra",
-    "category": "Kitchenware",
-    "price": 28.00,
-    "currency": "USD",
-    "stock": 85,
-    "rating": 4.7,
-    "features": ["Vacuum Insulated", "BPA Free", "24h Cold Retention"]
-  },
-  {
-    "id": 106,
-    "name": "Nova 4K Action Camera",
-    "brand": "Nova",
-    "category": "Electronics",
-    "price": 199.00,
-    "currency": "USD",
-    "stock": 22,
-    "rating": 4.4,
-    "features": ["Waterproof", "Image Stabilization", "Dual Screen"]
-  },
-  {
-    "id": 107,
-    "name": "Rustic Oak Coffee Table",
-    "brand": "Heritage",
-    "category": "Furniture",
-    "price": 245.00,
-    "currency": "USD",
-    "stock": 12,
-    "rating": 4.6,
-    "features": ["Solid Wood", "Handcrafted", "Easy Assembly"]
-  },
-  {
-    "id": 108,
-    "name": "Swift Run Sneakers",
-    "brand": "Velocity",
-    "category": "Apparel",
-    "price": 85.00,
-    "currency": "USD",
-    "stock": 60,
-    "rating": 4.3,
-    "features": ["Breathable Mesh", "Memory Foam Sole", "Lightweight"]
-  },
-  {
-    "id": 109,
-    "name": "Gourmet Espresso Beans",
-    "brand": "Beanery",
-    "category": "Food & Beverage",
-    "price": 18.50,
-    "currency": "USD",
-    "stock": 150,
-    "rating": 4.9,
-    "features": ["Dark Roast", "Fair Trade", "Whole Bean"]
-  },
-  {
-    "id": 110,
-    "name": "Stellar Night Projector",
-    "brand": "Cosmos",
-    "category": "Home Decor",
-    "price": 42.00,
-    "currency": "USD",
-    "stock": 54,
-    "rating": 4.1,
-    "features": ["Timer Function", "Remote Control", "Multiple Galaxy Modes"]
-  }
-]
+{
+  "status": "success",
+  "totalResults": 10,
+  "products": [
+    {
+      "id": 1,
+      "name": "Quantum X1 Wireless Mouse",
+      "category": "Electronics",
+      "details": {
+        "price": 49.99,
+        "currency": "USD",
+        "inStock": true
+      }
+    },
+    {
+      "id": 2,
+      "name": "Ceramic Matte Coffee Mug",
+      "category": "Kitchenware",
+      "details": {
+        "price": 15.50,
+        "currency": "USD",
+        "inStock": true
+      }
+    },
+    {
+      "id": 3,
+      "name": "Legacy Denim Jacket",
+      "category": "Apparel",
+      "details": {
+        "price": 89.00,
+        "currency": "USD",
+        "inStock": false
+      }
+    },
+    {
+      "id": 4,
+      "name": "Standing Desk Converter",
+      "category": "Furniture",
+      "details": {
+        "price": 129.00,
+        "currency": "USD",
+        "inStock": true
+      }
+    },
+    {
+      "id": 5,
+      "name": "Noise-Cancelling Earbuds",
+      "category": "Electronics",
+      "details": {
+        "price": 199.99,
+        "currency": "USD",
+        "inStock": true
+      }
+    },
+    {
+      "id": 6,
+      "name": "Adjustable Dumbbell Set",
+      "category": "Fitness",
+      "details": {
+        "price": 250.00,
+        "currency": "USD",
+        "inStock": true
+      }
+    },
+    {
+      "id": 7,
+      "name": "Self-Watering Planter",
+      "category": "Garden",
+      "details": {
+        "price": 24.95,
+        "currency": "USD",
+        "inStock": true
+      }
+    },
+    {
+      "id": 8,
+      "name": "Smart LED Floor Lamp",
+      "category": "Smart Home",
+      "details": {
+        "price": 75.00,
+        "currency": "USD",
+        "inStock": true
+      }
+    },
+    {
+      "id": 9,
+      "name": "Anti-Theft Travel Backpack",
+      "category": "Accessories",
+      "details": {
+        "price": 65.00,
+        "currency": "USD",
+        "inStock": false
+      }
+    },
+    {
+      "id": 10,
+      "name": "Stainless Steel Air Fryer",
+      "category": "Appliances",
+      "details": {
+        "price": 110.00,
+        "currency": "USD",
+        "inStock": true
+      }
+    }
+  ]
+}
