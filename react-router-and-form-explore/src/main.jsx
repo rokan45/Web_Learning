@@ -12,6 +12,7 @@ import Contact from './component/Contact/Contact.jsx'
 import User from './component/User/User.jsx'
 import UserDetails from './component/User/UserDetails.jsx'
 import Form from './component/form/Form.jsx'
+import Form2 from './component/form/Form2.jsx'
 
 const router = createBrowserRouter([
   {
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
       {
         path:"post",
         element:<Form/>
+      }
+      ,{
+        path:'form2',
+        element:<Form2/>
       }
     ]
   }
