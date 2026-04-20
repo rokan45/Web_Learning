@@ -19,8 +19,14 @@ const PostPage = async () => {
 
 
     return (
-        <div>
-            <h1>Hey Im here!{data.length}</h1>
+        <div className="mx-auto p-10 border-2 border-gray-100 grid grid-cols-3 gap-5">
+           {
+            data.map((da,index)=><div key={index} className="p-5 border-4 border-gray-100 shadow-md
+            "> 
+            <h1 className="text-2xl font-bold text-center">{da.title}</h1>
+            <p className="mt-5 text-gray-300">{da.body}</p>
+            </div>)
+           }
         </div>
     );
 };
